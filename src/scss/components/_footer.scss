@@ -2,3 +2,114 @@
 // ********************* //
 // *** FOOTER STYLES *** //
 // ********************* //
+
+.footer {
+  color: $color-gray;
+
+  &__top-side {
+    padding: 61px 0 80px 0;
+    background-color: $color-light-gray;
+  }
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__header {
+    margin-bottom: 14px;
+
+    color: $color-black;
+    font-size: 16px;
+  }
+
+  &__slogan {
+    max-width: 478px;
+    margin-bottom: 16px;
+
+    color: $color-dark-gray;
+    line-height: 27px;
+    font-weight: normal;
+  }
+
+  &__company-email {
+    display: flex;
+    column-gap: 14px;
+    justify-content: flex-start;
+    align-items: center;
+
+    margin-bottom: 22px;
+  }
+
+  .subscribe-form {
+    display: flex;
+    column-gap: 8px;
+
+    &__email {
+      width: 340px;
+      height: 40px;
+      padding: 6px 10px 6px 18px;
+
+      font-size: 16px;
+      font-weight: normal;
+
+      border: 1px solid $color-black;
+      border-radius: 21px;
+      background-color: inherit;
+
+      outline: none;
+    }
+
+    &__send {
+      width: 160px;
+      height: 40px;
+
+      color: $color-white;
+      font-size: 16px;
+
+      cursor: pointer;
+
+      border: none;
+      border-radius: 28px;
+      background-color: $color-black;
+    }
+  }
+
+
+  .social-networks {
+    &__list {
+      display: flex;
+      flex-direction: column;
+      row-gap: 15px;
+    }
+
+    &__item {
+      display: flex;
+      column-gap: 12px;
+      align-items: center;
+    }
+  }
+
+  .contacts {
+    &__list {
+      display: flex;
+      flex-direction: column;
+      row-gap: 15px;
+    }
+  }
+
+  &__bottom-side {
+    padding: 42px 0 41px 0;
+    background-color: $color-black;
+  }
+
+  &__locations {
+    display: flex;
+    column-gap: 12px;
+    justify-content: center;
+  }
+
+  &__location {
+    font-weight: normal;
+  }
+}
