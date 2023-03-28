@@ -3,4 +3,32 @@
 // *** GENERAL STYLES *** //
 // ********************** //
 
+@import 'supportive/fonts';
+@import 'supportive/variables';
+@import 'components/header';
 
+
+html, body {
+  height: 100%;
+
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+// Pin footer to the end of page
+.header { flex: 0 0 auto; }
+.main   { flex: 1 0 auto; }
+.footer { flex: 0 0 auto; }
+
+// Containers
+.main-container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 15px 0 15px;
+}
