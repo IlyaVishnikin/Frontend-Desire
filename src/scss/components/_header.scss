@@ -19,10 +19,30 @@
       column-gap: 80px;
     }
 
+    &__item {
+      padding-top: 5px;
+    }
+
     &__link {
       font-family: 'Montserrat', sans-serif;
       color: $color-black;
       opacity: 0.9;
+      
+      &::after {
+        content: '';
+        
+        display: block;
+        width: 0;
+        height: 2px;
+        margin-top: 5px;
+
+        border-radius: 3px;
+        background-color: $color-black;
+
+        transition: width 0.5s ease-in-out;
+      }
+
+      &--active::after, &:hover::after { width: 100%; }
     }
   }
 }
