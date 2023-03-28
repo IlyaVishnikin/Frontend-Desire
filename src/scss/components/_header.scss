@@ -1,0 +1,28 @@
+
+// ********************* //
+// *** HEADER STYLES *** //
+// ********************* //
+
+.header {
+  padding: 46px 0 43px 0;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .navigation {
+    &__list {
+      display: flex;
+      align-items: center;
+      column-gap: 80px;
+    }
+
+    &__link {
+      font-family: 'Montserrat', sans-serif;
+      color: $color-black;
+      opacity: 0.9;
+    }
+  }
+}
