@@ -13,26 +13,29 @@ html(lang="en")
       main.main
         section.section-slider
           .section-slider__slider.slider
-            .slider__item
-              .slider__column.slider__column--1
-                img.slider__image(src='/img/index/slider/1.png' alt='')
-              .slider__column.slider__column--2
-                h2.slider__header.block-header Furniture<br>collection
-                p.slider__header-text.block-header-text Deep v you probably haven't heard of them banh mi synth actually affogato. Aesthetic lyft ethical drinking vinegar austint
+            for (var i = 0; i < 3; ++ i)
+              .slider__item
+                .slider__column.slider__column--1
+                  img.slider__image(src='/img/index/slider/' + i + '.png' alt='')
+                .slider__column.slider__column--2
+                  h2.slider__header.block-header Furniture<br>collection
+                  p.slider__header-text.block-header-text Deep v you probably haven't heard of them banh mi synth actually affogato. Aesthetic lyft ethical drinking vinegar austint
 
-            .slider__item
-              .slider__column.slider__column--1
-                img.slider__image(src='/img/index/slider/1.png' alt='')
-              .slider__column.slider__column--2
-                h2.slider__header.block-header Furniture<br>collection
-                p.slider__header-text.block-header-text Deep v you probably haven't heard of them banh mi synth actually affogato. Aesthetic lyft ethical drinking vinegar austint
+        section.section-new-collection
+          .section-new-collection__row.section-new-collection__row--1
+            .main-container
+              h2.section-new-collection__header.block-header.block-header--centered Furniture new collection
+              p.section-new-collection__header-text.block-header-text Deep v you probably haven't heard of them banh mi synth actually affogato. Aesthetic lyft ethical drinking vinegar austint
 
-            .slider__item
-              .slider__column.slider__column--1
-                img.slider__image(src='/img/index/slider/1.png' alt='')
-              .slider__column.slider__column--2
-                h2.slider__header.block-header Furniture<br>collection
-                p.slider__header-text.block-header-text Deep v you probably haven't heard of them banh mi synth actually affogato. Aesthetic lyft ethical drinking vinegar austint
+          .section-new-collection__row.seciton-new-collection__row--2
+            .section-new-collection__new-collection.new-collection
+              for (var i = 0; i < 5; ++i)
+                .new-collection__item
+                  a.new-collectin__link(href='#')
+                    img.new-collection__background-image(src='/img/index/new-collections/' + img + '.png' alt='')
+                  p.new-collection__header.block-header.block-header--centered: strong Truffaut literally trust
+                  p.new-collection__text.block-header-text Living room furntiture | Chair
 
       include components/_footer.pug
-      include general/_slider.pug
+      include general/_scripts.pug
+      +scripts('index')

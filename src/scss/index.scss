@@ -4,9 +4,53 @@
 // ******************** //
 
 .section-slider {
-  padding-left: 171px;
-  padding-right: 392px;
+  padding: 0 392px 133px 171px;
 
   background-image: url(/img/index/slider/background.png);
   background-repeat: no-repeat;
+}
+
+.section-new-collection {
+  padding: 0 28px;
+
+  &__row--1 { margin-bottom: 24px; }
+  &__header { margin-bottom: 24px; }
+  &__header-text {
+    max-width: 730px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .new-collection {
+    display: flex;
+    column-gap: 30px;
+    row-gap: 25px;
+
+    &__item {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 350px;
+      height: 350px;
+
+      vertical-align: center;
+    }
+
+    &__background-image {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+
+      opacity: 1;
+      transition: opacity .5s ease-in-out;
+
+      &:hover { opacity: .2; }
+    }
+
+    &__header, &__text { margin: 0 auto}
+  }
 }
