@@ -40,4 +40,20 @@ html, body {
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
-} 
+  font-size: 36px;
+
+  &::after {
+    content: '';
+
+    display: inline-block;
+    width: 252px;
+    height: 1px;
+
+    background-color: $color-gray;
+
+    &::before {
+      content: '\a';
+      white-space: pre;
+    }
+  }
+}
