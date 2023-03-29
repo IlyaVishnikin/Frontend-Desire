@@ -13,6 +13,8 @@
     align-items: center;
   }
 
+  &__column--2 { padding-left: 100px; }
+
   .navigation {
     &__list {
       display: flex;
