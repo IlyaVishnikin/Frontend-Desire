@@ -44,8 +44,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 // Page Headers
-.block-header,
-{
+.block-header {
   line-height: 60px;
 
   &::after {
