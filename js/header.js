@@ -3,11 +3,12 @@
 // *** HEADER SCRIPT *** //
 // ********************* //
 
-var submenu = document.querySelector('.header__popup-menu'); 
-document.querySelector('button.navigation__submenu').addEventListener('click', function() {
-  submenu.style.visibility = 'visible';
-});
+$(function() {
+  $('button.navigation__submenu').click(function() {;
+    $('.header__popup-menu').css('visibility', 'visible');
+  });
 
-document.querySelector('button.popup-menu__close').addEventListener('click', function() {
-  submenu.style.visibility = 'hidden';
+  $('button.popup-menu__close').click(function() {
+    $('.header__popup-menu').css('visibility', 'hidden');
+  });
 });
