@@ -21,6 +21,8 @@
 
     color: $color-black;
     font-size: 16px;
+
+    &::after { display: none; }
   }
 
   &__slogan {
