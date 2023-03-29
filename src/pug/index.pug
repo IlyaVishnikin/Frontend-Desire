@@ -9,7 +9,7 @@ html(lang="en")
       include components/_header.pug
       +header()
 
-      main.main
+      main.index-main
         section.section-slider
           .section-slider__slider.slider
             - for (var i = 1; i < 4; ++i)
@@ -34,6 +34,13 @@ html(lang="en")
                     img.new-collection__background-image(src='/img/index/new-collections/' + i + '.png' alt='')
                   p.new-collection__header.block-header.block-header--centered: strong Truffaut literally trust
                   p.new-collection__text.block-header-text Living room furntiture | Chair
+
+        section.section-slogan
+          .main-container
+            .section-slogan__inner
+              img.section-slogan__background-image(src='/img/index/slogan/background.png' alt='')
+              h2.section-slogan__header.block-header Aesthetic<br>ethical drinking
+              p.section-slogan__header-text.block-header-text Deep v you probably haven't heard of them banh mi synth actually affogato. Artlyft ethical the one drinking vinegar austint
 
       include components/_footer.pug
       include general/_scripts.pug
