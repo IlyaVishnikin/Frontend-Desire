@@ -17,8 +17,7 @@ mixin header(active)
                 a.navigation__link.navigation__link--galary(class=(active == 'galary' ? 'navigation__link--active' : '') href='/html/galary.html') Galary
 
         .header__column.header__column--2
-          a(href='index.html')
-            img.header__logotype(src='/img/icons/logotype.png' alt='Desire Logotype')
+          a(href='index.html'): img.header__logotype(src='/img/logotypes/logotype-header.png' alt='Desire Logotype')
 
         .header__column.header__column--3
           nav.header__navigation.navigation
@@ -30,4 +29,14 @@ mixin header(active)
                 a.navigation__link.navigation__link--contact(class=(active == 'contact' ? 'navigation__link--active' : '') href='/html/contact.html') Contact
 
               li.navigation__item
-                a.navigation__submenu(href='#' title='Menu'): img(src='/img/icons/menu.svg' alt='Menu')
+                button.navigation__submenu(title='Menu'): img(src='/img/icons/menu.svg' alt='Menu')
+
+      .header__popup-menu.popup-menu
+        .popup-menu__inner
+          button.popup-menu__close: img(src='/img/icons/close.svg' alt='Close')
+          a(href='index.html'): img.popup-menu__logotype(src='/img/logotypes/logotype-popup-menu.png' alt='Desire Logotype')
+          h4.popup-menu__header Furniture for life <br>
+          p.popup-menu__header-text Sustainable hot chicken skateboard, dreamcatcher meggings actually squid. Slow-carb everyday carry +1 art party microdosing, put a bird on it brooklyn
+          img.popup-menu__image(src='/img/popup-menu/1.jpg' alt='')
+
+  script(src='/js/header.js')
