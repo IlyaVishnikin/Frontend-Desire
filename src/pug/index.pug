@@ -13,7 +13,7 @@ html(lang="en")
       main.main
         section.section-slider
           .section-slider__slider.slider
-            for (var i = 0; i < 3; ++ i)
+            - for (var i = 0; i < 3; ++i)
               .slider__item
                 .slider__column.slider__column--1
                   img.slider__image(src='/img/index/slider/' + i + '.png' alt='')
@@ -29,7 +29,7 @@ html(lang="en")
 
           .section-new-collection__row.seciton-new-collection__row--2
             .section-new-collection__new-collection.new-collection
-              for (var i = 0; i < 5; ++i)
+              - for (var i = 0; i < 5; ++i)
                 .new-collection__item
                   a.new-collectin__link(href='#')
                     img.new-collection__background-image(src='/img/index/new-collections/' + img + '.png' alt='')
