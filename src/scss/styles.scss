@@ -71,3 +71,41 @@ h1, h2, h3, h4, h5, h6 {
   color: $color-gray;
   line-height: 27px;
 }
+
+// Slick carousel
+.slider {
+  position: relative;
+
+  &__item {
+    display: flex !important;
+    align-items: center;
+    column-gap: 19px;
+  }
+
+  &__header {
+    font-size: 110px;
+    line-height: 134px;
+  }
+
+  .slick-dots {
+    position: absolute;
+    display: flex;
+    column-gap: 30px;
+    bottom: 0;
+    left: 50%;
+
+    button {
+      font-size: 0;
+      width: 8px;
+      height: 8px;
+      
+      border: none;
+      border-radius: 50%;
+      background-color: $color-black;
+
+      cursor: pointer;
+    }
+
+    .slick-active button { background-color: $color-lemon; }
+  }
+}
