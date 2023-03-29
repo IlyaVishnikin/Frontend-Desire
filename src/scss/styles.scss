@@ -41,19 +41,26 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
   font-size: 36px;
+}
+
+// Page Headers
+.block-header,
+{
+  line-height: 60px;
 
   &::after {
     content: '';
 
-    display: inline-block;
+    display: block;
     width: 252px;
     height: 1px;
+    margin-top: 24px;
 
     background-color: $color-gray;
-
-    &::before {
-      content: '\a';
-      white-space: pre;
-    }
   }
+}
+
+.block-header--centered {
+  text-align: center;
+  &::after { margin: 0 auto; }
 }
